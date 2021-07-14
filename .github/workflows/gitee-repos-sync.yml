@@ -12,12 +12,12 @@ name: Gitee repos mirror periodic sync job
 
 on:
   # push推送时触发
-  #push:
+  push:
   # 定时任务触发
   schedule:
-    # 每天北京时间9点跑
-    # Runs at 01:00 UTC (9:00 AM Beijing) every day
-    - cron:  '0 1 * * *'
+    # 每天北京时间10点跑
+    # Runs at 02:00 UTC (10:00 AM Beijing) every day
+    - cron:  '0 2 * * *'
 
 jobs:
   build:
