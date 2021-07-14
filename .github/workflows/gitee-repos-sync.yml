@@ -41,16 +41,16 @@ jobs:
         # 需要同步到的目的端账户名，如gitee/phpdragon，表示Gitee的phpdragon账户。
         dst: gitee/xkloveme
         # 用于目的端上传代码的SSH key，用于上传代码
-        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_key: ${{ secrets.GITEE_PRIVATE_SSH_KEY }}
         # 创建仓库的API tokens， 用于自动创建不存在的仓库
         dst_token: ${{ secrets.GITEE_PRIVATE_TOKEN }}
         account_type: user
         # 指定目录cache
         cache_path: /github/workspace/phpdragon-cache
         # 白名单，仅同步白名单中的repos，如“repo1,repo2,repo3”
-        white_list: "hub-mirror-action,spark-example"
+        white_list: "hub-mirror-action,xkloveme"
         # 仅同步静态列表，不会再动态获取需同步列表（黑白名单机制依旧生效）
-        static_list: "spark-example"
+        # static_list: "spark-example"
         # 强制更新
         force_update: true
         # clone方式，使用http、ssh方式进行clone
