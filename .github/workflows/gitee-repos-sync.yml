@@ -48,7 +48,7 @@ jobs:
         # 指定目录cache
         cache_path: /github/workspace/phpdragon-cache
         # 白名单，仅同步白名单中的repos，如“repo1,repo2,repo3”
-        white_list: "hub-mirror-action,xkloveme"
+        # white_list: "hub-mirror-action,xkloveme"
         # 仅同步静态列表，不会再动态获取需同步列表（黑白名单机制依旧生效）
         # static_list: "spark-example"
         # 强制更新
